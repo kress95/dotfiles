@@ -59,6 +59,8 @@
 !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml
 !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
 !.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+!.config/sublime-text-3
+!.config/sublime-text-3/Packages
 !.config/sublime-text-3/Packages/User
 !.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap
 !.config/sublime-text-3/Packages/User/Elixir.sublime-settings

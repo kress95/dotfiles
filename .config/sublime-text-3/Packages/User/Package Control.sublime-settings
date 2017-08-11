@@ -1,0 +1,31 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Dracula Color Scheme",
+		"EditorConfig",
+		"Elixir",
+		"ElixirSublime",
+		"Elm Language Support",
+		"Elm Snippets",
+		"Flat Chameleon",
+		"Flatron",
+		"GitGutter",
+		"Gitignore",
+		"GitStatus",
+		"Gotham Theme",
+		"Lambda Substitution",
+		"Missing Palette Commands",
+		"Origami",
+		"Package Control",
+		"RecentActiveFiles",
+		"RecentTabSort",
+		"Theme - amCoder",
+		"Theme - Flatland",
+		"Theme - SoDaReloaded",
+		"WakaTime"
+	]
+}
