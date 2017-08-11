@@ -60,6 +60,15 @@
 !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
 !.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
 !.config/sublime-text-3/Packages/User
+!.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap
+!.config/sublime-text-3/Packages/User/Elixir.sublime-settings
+!.config/sublime-text-3/Packages/User/Elm.sublime-settings
+!.config/sublime-text-3/Packages/User/Flat Chameleon
+!.config/sublime-text-3/Packages/User/Flat Chameleon/Flat Chameleon.sublime-theme
+!.config/sublime-text-3/Packages/User/Package Control.sublime-settings
+!.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+!.config/sublime-text-3/Packages/User/Twilight.tmTheme
+!.config/sublime-text-3/Packages/User/Widget - Flat Chameleon.sublime-settings
 !.dmrc
 !.gitignore
 !.spacemacs
