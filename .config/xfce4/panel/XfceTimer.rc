@@ -1,22 +1,22 @@
 [G0]
-timername=Hobby
+timername=Work
+time=1500
+timercommand=
+timerinfo=25m 0s
+is_countdown=true
+
+[G1]
+timername=BigWork
 time=2700
 timercommand=
 timerinfo=45m 0s
 is_countdown=true
 
-[G1]
-timername=Procrastinate
+[G2]
+timername=Extra
 time=600
 timercommand=
 timerinfo=10m 0s
-is_countdown=true
-
-[G2]
-timername=Pause
-time=300
-timercommand=
-timerinfo=5m 0s
 is_countdown=true
 
 [others]

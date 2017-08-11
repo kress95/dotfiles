@@ -9,7 +9,7 @@ Font_Size_Numerical=2
 Lines_Size=1
 Update_Interval=2
 Exec_Command=true
-Show_Units=true
+Show_Units=false
 Small_Spacings=true
 Command_Name=xfce4-sensors
 Number_Chips=3
@@ -30,19 +30,19 @@ Number=1
 Id=-1
 Address=1
 Name=Core 0
-Color=#FFFFFF
+Color=#ffffff
 Show=true
 Min=0.00
-Max=54.00
+Max=39.00
 
 [Chip1_Feature2]
 Id=-1
 Address=2
 Name=Core 1
-Color=#FFFFFF
+Color=#ffffff
 Show=true
 Min=0.00
-Max=51.00
+Max=35.00
 
 [Chip2]
 Name=ACPI
