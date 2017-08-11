@@ -1,0 +1,30 @@
+[G0]
+timername=Hobby
+time=2700
+timercommand=
+timerinfo=45m 0s
+is_countdown=true
+
+[G1]
+timername=Procrastinate
+time=600
+timercommand=
+timerinfo=10m 0s
+is_countdown=true
+
+[G2]
+timername=Pause
+time=300
+timercommand=
+timerinfo=5m 0s
+is_countdown=true
+
+[others]
+nowin_if_alarm=false
+selecting_starts=false
+use_global_command=false
+global_command=
+repeat_alarm=false
+repetitions=1
+repeat_interval=10
+
