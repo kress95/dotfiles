@@ -16,40 +16,47 @@ browser = chromium
 filter_unmatched_urls = true
 
 [colors]
-# special
-foreground      = #98d1ce
-foreground_bold = #98d1ce
-cursor          = #98d1ce
-background      = rgba(12, 16, 20, 0.896)
+foreground      = #a7a7a7
+foreground_bold = #c3c3c3
+cursor          = #c3c3c3
+background      = rgba(30, 30, 30, 0.9)
 
-# black
-color0  = #0a0f14
-color8  = #10151b
+# 16 color space
 
-# red
-color1  = #c33027
-color9  = #d26939
+# Black, Gray, Silver, White
+color0  = #1e1e1e
+color8  = #5f5a60
+color7  = #a7a7a7
+color15 = #ffffff
 
-# green
-color2  = #26a98b
-color10 = #081f2d
+# Red
+color1  = #cf6a4c
+color9  = #cf6a4c
 
-# yellow
-color3  = #edb54b
-color11 = #245361
+# Green
+color2  = #8f9d6a
+color10 = #8f9d6a
 
-# blue
-color4  = #195465
-color12 = #093748
+# Yellow
+color3  = #f9ee98
+color11 = #f9ee98
 
-# magenta
-color5  = #4e5165
-color13 = #888ba5
+# Blue
+color4  = #7587a6
+color12 = #7587a6
 
-# cyan
-color6  = #33859d
-color14 = #599caa
+# Purple
+color5  = #9b859d
+color13 = #9b859d
 
-# white
-color7  = #98d1ce
-color15 = #d3ebe9
+# Teal
+color6  = #afc4db
+color14 = #afc4db
+
+# Extra colors
+color16 = #cda869
+color17 = #9b703f
+color18 = #323537
+color19 = #464b50
+color20 = #838184
+color21 = #c3c3c3
