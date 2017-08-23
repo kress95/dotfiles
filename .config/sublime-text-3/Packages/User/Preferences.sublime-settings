@@ -1,27 +1,27 @@
 {
-  "caret_extra_bottom": 2,
-  "caret_extra_top": 2,
-  "caret_extra_width": 1,
-  "caret_style": "blink",
-  "color_scheme": "Packages/User/Twilight.tmTheme",
-  "detect_indentation": false,
-  "font_face": "lucy tewi",
-  "font_size": 8,
-  "highlight_line": true,
-  "ignored_packages":
-  [
-    "ElixirSublime",
-    "Theme - Flatland",
-    "Vintage"
-  ],
-  "margin": 2,
-  "rulers":
-  [
-    79,
-    99,
-    119
-  ],
-  "tab_size": 2,
-  "theme": "amCoder.sublime-theme",
-  "translate_tabs_to_spaces": true
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
+	"caret_extra_width": 1,
+	"caret_style": "blink",
+	"color_scheme": "Packages/User/Twilight.tmTheme",
+	"detect_indentation": false,
+	"font_face": "lucy tewi",
+	"font_size": 9,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"ElixirSublime",
+		"Theme - Flatland",
+		"Vintage"
+	],
+	"margin": 2,
+	"rulers":
+	[
+		79,
+		99,
+		119
+	],
+	"tab_size": 2,
+	"theme": "amCoder.sublime-theme",
+	"translate_tabs_to_spaces": true
 }
