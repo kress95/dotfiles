@@ -62,12 +62,12 @@
         <value type="uint" value="65535"/>
       </property>
       <property name="span-monitors" type="bool" value="false"/>
-      <property name="output-name" type="string" value="monitor-1"/>
+      <property name="output-name" type="string" value="monitor-0"/>
     </property>
     <property name="panel-2" type="empty">
       <property name="position" type="string" value="p=8;x=960;y=1067"/>
       <property name="autohide-behavior" type="uint" value="0"/>
-      <property name="output-name" type="string" value="monitor-0"/>
+      <property name="output-name" type="string" value="monitor-1"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="length" type="uint" value="100"/>
       <property name="nrows" type="uint" value="1"/>
