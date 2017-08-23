@@ -1,4 +1,10 @@
 *
+!.local
+!.local/bin
+!.local/bin/autopaper
+!.local/bin/center
+!.local/bin/remove-opacity
+!.local/bin/wallpaper
 !.asoundrc
 !.config
 !.config/autostart

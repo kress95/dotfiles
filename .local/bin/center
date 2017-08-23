@@ -1,0 +1,7 @@
+#!/bin/env sh
+
+eval `xdotool getactivewindow getwindowgeometry --shell`
+
+if [ "$WIDTH" -ne "0" ] && [ "$HEIGHT" -ne "0" ]; then
+  xdotool mousemove $((X+WIDTH/2)) $((Y+HEIGHT/2))
+fi

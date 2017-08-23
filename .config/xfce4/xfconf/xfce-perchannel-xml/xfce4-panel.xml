@@ -108,6 +108,7 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="names-visible" type="array">
         <value type="string" value="rambox"/>
+        <value type="string" value="hubstaffclient.bin.x86_64"/>
         <value type="string" value="task manager"/>
         <value type="string" value="telegramdesktop"/>
         <value type="string" value="thunar"/>

@@ -1,0 +1,4 @@
+#!/bin/env sh
+sleep 4
+wallpaper
+srandrd -n 'wallpaper'
