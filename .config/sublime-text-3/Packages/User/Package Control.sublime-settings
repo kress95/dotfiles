@@ -5,28 +5,20 @@
 	],
 	"installed_packages":
 	[
-		"Dracula Color Scheme",
 		"Ecmascript Syntax",
 		"EditorConfig",
 		"Elixir",
 		"ElixirSublime",
 		"Elm Language Support",
-		"Elm Snippets",
-		"Flat Chameleon",
-		"Flatron",
 		"GitGutter",
 		"Gitignore",
-		"GitStatus",
-		"Gotham Theme",
 		"Lambda Substitution",
 		"Missing Palette Commands",
 		"Origami",
 		"Package Control",
-		"RecentActiveFiles",
 		"RecentTabSort",
+		"Tab Filter",
 		"Theme - amCoder",
-		"Theme - Flatland",
-		"Theme - SoDaReloaded",
 		"WakaTime"
 	]
 }

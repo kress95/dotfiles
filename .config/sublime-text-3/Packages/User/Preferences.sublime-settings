@@ -11,7 +11,6 @@
 	"ignored_packages":
 	[
 		"ElixirSublime",
-		"Theme - Flatland",
 		"Vintage"
 	],
 	"margin": 2,
