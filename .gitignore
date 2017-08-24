@@ -52,9 +52,7 @@
 !.config/xfce4/panel/xfce4-timer-14.rc
 !.config/xfce4/panel/XfceTimer.rc
 !.config/xfce4/terminal
-!.config/xfce4/terminal/accels.scm
 !.config/xfce4/xfce4-screenshooter
-!.config/xfce4/xfce4-taskmanager.rc
 !.config/xfce4/xfconf
 !.config/xfce4/xfconf/xfce-perchannel-xml
 !.config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
@@ -84,6 +82,5 @@
 !.config/user-dirs.locale
 !.config/mimeapps.list
 !.config/ristretto
-!.config/ristretto/accels.scm
 !.config/Thunar
 !.config/Thunar/uca.xml
