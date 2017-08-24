@@ -1,5 +1,5 @@
 [Added Associations]
-image/jpeg=gimp.desktop;ristretto.desktop;feh.desktop;
+image/jpeg=ristretto.desktop;gimp.desktop;feh.desktop;
 image/png=feh.desktop;
 text/plain=mousepad.desktop;
 application/x-shellscript=mousepad.desktop;

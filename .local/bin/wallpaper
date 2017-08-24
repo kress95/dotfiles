@@ -1,33 +1,9 @@
 #!/bin/env sh
 
-count=$(xrandr -q | grep " connected" | wc -l)
 main=$(xrandr -q | grep -m 1 " connected" | cut -d" " -f1)
 
-if [ $main = "DP-1" ]; then
-    xfconf-query -v -c xfce4-panel -p /panels/panel-1/output-name -s monitor-0
-    xfconf-query -v -c xfce4-panel -p /panels/panel-2/output-name -s monitor-1
-
-    xrandr --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output LVDS-1 --off --output HDMI-1 --off --output VGA-1 --off
-
-    feh \
-      --bg-fill "$HOME/Pictures/Wallpapers/wallpaper-1080.png"
+if [ $main = "HDMI-1" ]; then
+    feh --bg-fill "$HOME/Pictures/Wallpapers/wallpaper-1080.png"
 else
-  if [ $count = "1" ]; then
-    xfconf-query -v -c xfce4-panel -p /panels/panel-1/output-name -s monitor-0
-    xfconf-query -v -c xfce4-panel -p /panels/panel-2/output-name -s monitor-1
-
-    xrandr --output LVDS-1 --primary --mode 1366x768 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output VGA-1 --off
-
-    feh \
-      --bg-fill "$HOME/Pictures/Wallpapers/wallpaper-768.png"
-  else
-    xfconf-query -v -c xfce4-panel -p /panels/panel-1/output-name -s monitor-1
-    xfconf-query -v -c xfce4-panel -p /panels/panel-2/output-name -s monitor-0
-
-    xrandr --output LVDS-1 --primary --mode 1366x768 --pos 277x1080 --rotate normal --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output VGA-1 --off
-
-    feh \
-      --bg-fill "$HOME/Pictures/Wallpapers/wallpaper-768.png" \
-      --bg-fill "$HOME/Pictures/Wallpapers/wallpaper-1080.png"
-  fi
+    feh  --bg-fill "$HOME/Pictures/Wallpapers/wallpaper-768.png"
 fi

@@ -81,6 +81,10 @@ set $ws0 "19:0"
 
 # center mouse command
 set $center "$HOME/.local/bin/center"
+set $wallpaper "$HOME/.local/bin/wallpaper"
+
+# apply wallpaper
+exec --no-startup-id $wallpaper
 
 #-------------------------------------------------------------------------------
 # default keybinding mode

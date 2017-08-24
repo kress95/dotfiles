@@ -3,5 +3,5 @@ focused_color=16777215
 urgent_color=16711680
 mode_color=16711680
 strip_workspace_numbers=true
-output=LVDS-1
+output=
 
