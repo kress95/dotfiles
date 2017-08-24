@@ -1,10 +1,11 @@
 #-------------------------------------------------------------------------------
-# vim-like xfce-integrated i3
+# kress's i3
 #
 # Philosophy:
 #   - a power user still's a user, this should be easy to get and to use
-#   - modifiers + modal is bad, so no modals at all
-#   - tabs are bad, but i3 leaves no option, so let's abuse them
+#   - mnemoic inpk keys (inpkeys :P)
+#   - no modals
+#   - tabs are bad, but i3 leaves no option, so let's make them better
 #-------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------
@@ -13,11 +14,12 @@
 
 # default mod keys
 set $mod Mod4
-set $alt Shift
+set $shift Shift
+set $alt control
 
 #-------------------------------------------------------------------------------
 # behaviour
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 
 # default container mode is tabbed
 workspace_layout tabbed
@@ -60,7 +62,7 @@ new_float normal 1px
 new_window normal 0px
 
 #-------------------------------------------------------------------------------
-# workspaces
+# workspaces!
 #-------------------------------------------------------------------------------
 
 # primary workspaces
@@ -87,69 +89,36 @@ set $wallpaper "$HOME/.local/bin/wallpaper"
 exec --no-startup-id $wallpaper
 
 #-------------------------------------------------------------------------------
-# default keybinding mode
+# focus, movement and rezise
 #-------------------------------------------------------------------------------
 
-# focus the child/parent
-bindsym $mod+c focus child; exec --no-startup-id $center
-bindsym $mod+$alt+p focus child; exec --no-startup-id $center
-bindsym $mod+p focus parent; exec --no-startup-id $center
-bindsym $mod+$alt+c focus parent; exec --no-startup-id $center
-
-# split V (|) H (-)
-bindsym $mod+bar split horizontal
-bindsym $mod+minus split vertical
-
-# toggle split/tab
-bindsym $mod+s layout toggle split; exec --no-startup-id $center
-bindsym $mod+$alt+s layout tabbed; exec --no-startup-id $center
-
-# toggle tiling / floating focus
-bindsym $mod+apostrophe focus mode_toggle; exec --no-startup-id $center
-bindsym $mod+$alt+apostrophe floating toggle; exec --no-startup-id $center
-
-# toggle fullscreen
-bindsym $mod+f fullscreen toggle; exec --no-startup-id $center
-
-# kill focused window
-bindsym $mod+x kill; exec --no-startup-id $center
-bindsym $mod+d kill; exec --no-startup-id $center
-
-# reload/restart
-bindsym $mod+Escape reload; exec --no-startup-id "$HOME/.local/bin/wallpaper"
-bindsym $mod+$alt+Escape exec --no-startup-id "i3-msg restart & xfce4-panel -r"
-
 # focus with hjkl keys
-bindsym $mod+h focus left; exec --no-startup-id $center
-bindsym $mod+j focus down; exec --no-startup-id $center
-bindsym $mod+k focus up; exec --no-startup-id $center
-bindsym $mod+l focus right; exec --no-startup-id $center
-
-# focus output up/down
-bindsym $mod+o focus output down; exec --no-startup-id $center
-bindsym $mod+$alt+o focus output up; exec --no-startup-id $center
+bindsym $mod+i focus up; exec --no-startup-id $center
+bindsym $mod+n focus left; exec --no-startup-id $center
+bindsym $mod+p focus right; exec --no-startup-id $center
+bindsym $mod+k focus down; exec --no-startup-id $center
 
 # move window with hjkl keys
-bindsym $mod+$alt+h move left; exec --no-startup-id $center
-bindsym $mod+$alt+j move down; exec --no-startup-id $center
-bindsym $mod+$alt+k move up; exec --no-startup-id $center
-bindsym $mod+$alt+l move right; exec --no-startup-id $center
-
-# move to output up/down
-bindsym $mod+u move workspace to output up; exec --no-startup-id $center
-bindsym $mod+$alt+u move workspace to output up; exec --no-startup-id $center
+bindsym $mod+$shift+i move up; exec --no-startup-id $center
+bindsym $mod+$shift+n move left; exec --no-startup-id $center
+bindsym $mod+$shift+p move right; exec --no-startup-id $center
+bindsym $mod+$shift+k move down; exec --no-startup-id $center
 
 # increase size
-bindsym $mod+Left resize grow left 10 px or 5 ppt; exec --no-startup-id $center
-bindsym $mod+Down resize grow down 10 px or 5 ppt; exec --no-startup-id $center
-bindsym $mod+Up resize grow up 10 px or 5 ppt; exec --no-startup-id $center
-bindsym $mod+Right resize grow right 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+$alt+i resize grow up 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+$alt+n resize grow left 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+$alt+p resize grow right 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+$alt+k resize grow down 10 px or 5 ppt; exec --no-startup-id $center
 
 # decrease size
-bindsym $mod+$alt+Left resize shrink right 10 px or 5 ppt; exec --no-startup-id $center
-bindsym $mod+$alt+Down resize shrink up 10 px or 5 ppt; exec --no-startup-id $center
-bindsym $mod+$alt+Up resize shrink down 10 px or 5 ppt; exec --no-startup-id $center
-bindsym $mod+$alt+Right resize shrink left 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+$alt+$shift+i resize shrink down 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+$alt+$shift+n resize shrink right 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+$alt+$shift+p resize shrink left 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+$alt+$shift+k resize shrink up 10 px or 5 ppt; exec --no-startup-id $center
+
+#-------------------------------------------------------------------------------
+# workspaces focus and movement
+#-------------------------------------------------------------------------------
 
 # focus workspace
 bindsym $mod+1 workspace $ws1; exec --no-startup-id $center
@@ -164,33 +133,76 @@ bindsym $mod+9 workspace $ws9; exec --no-startup-id $center
 bindsym $mod+0 workspace $ws0; exec --no-startup-id $center
 
 # move to workspace
-bindsym $mod+$alt+1 move container to workspace $ws1; exec --no-startup-id $center
-bindsym $mod+$alt+2 move container to workspace $ws2; exec --no-startup-id $center
-bindsym $mod+$alt+3 move container to workspace $ws3; exec --no-startup-id $center
-bindsym $mod+$alt+4 move container to workspace $ws4; exec --no-startup-id $center
-bindsym $mod+$alt+5 move container to workspace $ws5; exec --no-startup-id $center
-bindsym $mod+$alt+6 move container to workspace $ws6; exec --no-startup-id $center
-bindsym $mod+$alt+7 move container to workspace $ws7; exec --no-startup-id $center
-bindsym $mod+$alt+8 move container to workspace $ws8; exec --no-startup-id $center
-bindsym $mod+$alt+9 move container to workspace $ws9; exec --no-startup-id $center
-bindsym $mod+$alt+0 move container to workspace $ws0; exec --no-startup-id $center
+bindsym $mod+$shift+1 move container to workspace $ws1; exec --no-startup-id $center
+bindsym $mod+$shift+2 move container to workspace $ws2; exec --no-startup-id $center
+bindsym $mod+$shift+3 move container to workspace $ws3; exec --no-startup-id $center
+bindsym $mod+$shift+4 move container to workspace $ws4; exec --no-startup-id $center
+bindsym $mod+$shift+5 move container to workspace $ws5; exec --no-startup-id $center
+bindsym $mod+$shift+6 move container to workspace $ws6; exec --no-startup-id $center
+bindsym $mod+$shift+7 move container to workspace $ws7; exec --no-startup-id $center
+bindsym $mod+$shift+8 move container to workspace $ws8; exec --no-startup-id $center
+bindsym $mod+$shift+9 move container to workspace $ws9; exec --no-startup-id $center
+bindsym $mod+$shift+0 move container to workspace $ws0; exec --no-startup-id $center
 
-# app integrations
+#-------------------------------------------------------------------------------
+# tiling
+#-------------------------------------------------------------------------------
+
+# focus the child/parent
+bindsym $mod+c focus child; exec --no-startup-id $center
+bindsym $mod+$shift+c focus parent; exec --no-startup-id $center
+
+# split V (|) H (-)
+bindsym $mod+bar split horizontal
+bindsym $mod+minus split vertical
+
+# toggle split/tab
+bindsym $mod+s layout toggle split; exec --no-startup-id $center
+bindsym $mod+$alt+s layout tabbed; exec --no-startup-id $center
+
+# focus mode toggle
+bindsym $mod+f focus mode_toggle; exec --no-startup-id $center
+
+# toggle tiling / floating
+bindsym $mod+$alt+t floating toggle; exec --no-startup-id $center
+
+# toggle fullscreen
+bindsym $mod+apostrophe fullscreen toggle; exec --no-startup-id $center
+
+# kill focused window
+bindsym $mod+x kill; exec --no-startup-id $center
+bindsym $mod+d kill; exec --no-startup-id $center
+
+# reload/restart
+bindsym $mod+Escape reload; exec --no-startup-id "$HOME/.local/bin/wallpaper"
+bindsym $mod+$alt+Escape exec --no-startup-id "i3-msg restart & xfce4-panel -r"
+
+#-------------------------------------------------------------------------------
+# integrations 
+#-------------------------------------------------------------------------------
+
+# terminal
 bindsym $mod+colon exec "termite"
-bindsym $mod+question exec "catfish"
+
+# audio
 bindsym $mod+a exec "pavucontrol"
+
+# xfce
+bindsym $mod+question exec --no-startup-id "catfish"
 bindsym $mod+y exec --no-startup-id "xfce4-popup-clipman"
 bindsym $mod+e exec --no-startup-id "xfce4-popup-directorymenu"
 bindsym $mod+Return exec --no-startup-id "xfce4-popup-whiskermenu"
+
+# print screen
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/Screenshots/WholeScreen.png'
 bindsym $mod+Print exec "xfce4-screenshooter"
+
+# cheats
 bindsym $mod+Pause exec --no-startup-id "~/.local/bin/iddle"
 
-# opacity
-bindsym $mod+comma exec --no-startup-id transset-df -a --dec 0.05
-bindsym $mod+period exec --no-startup-id transset-df -a --inc 0.05
-bindsym $mod+BackSpace exec --no-startup-id "~/.local/bin/remove-opacity"
-
+#-------------------------------------------------------------------------------
+# session management
+#-------------------------------------------------------------------------------
 
 # lock screen
 bindsym $mod+q exec --no-startup-id i3lock \
@@ -203,3 +215,12 @@ bindsym $mod+q exec --no-startup-id i3lock \
 
 # logout screen
 bindsym $mod+Shift+q exec --no-startup-id xfce4-session-logout
+
+#-------------------------------------------------------------------------------
+# misc
+#-------------------------------------------------------------------------------
+
+# opacity
+bindsym $mod+comma exec --no-startup-id transset-df -a --dec 0.05
+bindsym $mod+period exec --no-startup-id transset-df -a --inc 0.05
+bindsym $mod+BackSpace exec --no-startup-id "~/.local/bin/remove-opacity"
