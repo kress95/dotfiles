@@ -1,37 +1,43 @@
 *
+
+!.gitignore
+!.spacemacs
+!.zimrc
+!.zshrc
+
 !.local
 !.local/bin
-!.local/bin/autopaper
 !.local/bin/center
 !.local/bin/remove-opacity
 !.local/bin/wallpaper
-!.asoundrc
+
 !.config
+!.config/compton.conf
+!.config/i3
+!.config/i3/config
+!.config/termite
+!.config/termite/config
+
 !.config/autostart
+!.config/autostart/synergy.desktop
 !.config/autostart/Caps = Escape.desktop
 !.config/autostart/compton.desktop
 !.config/autostart/i3.desktop
 !.config/autostart/Wallpaper.desktop
-!.config/catfish
-!.config/catfish/catfish.rc
-!.config/compton.conf
-!.config/i3
-!.config/i3/config
-!.config/menus
-!.config/menus/applications-merged
-!.config/menus/applications-merged/user-chrome-apps.menu
-!.config/menus/applications-merged/xdg-desktop-menu-dummy.menu
-!.config/mimeapps.list
-!.config/Mousepad
-!.config/Mousepad/accels.scm
-!.config/ristretto
-!.config/ristretto/accels.scm
-!.config/termite
-!.config/termite/config
-!.config/Thunar
-!.config/Thunar/uca.xml
-!.config/user-dirs.dirs
-!.config/user-dirs.locale
+
+!.config/sublime-text-3
+!.config/sublime-text-3/Packages
+!.config/sublime-text-3/Packages/User
+!.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap
+!.config/sublime-text-3/Packages/User/Elixir.sublime-settings
+!.config/sublime-text-3/Packages/User/Elm.sublime-settings
+!.config/sublime-text-3/Packages/User/Flat Chameleon
+!.config/sublime-text-3/Packages/User/Flat Chameleon/Flat Chameleon.sublime-theme
+!.config/sublime-text-3/Packages/User/Package Control.sublime-settings
+!.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+!.config/sublime-text-3/Packages/User/Twilight.tmTheme
+!.config/sublime-text-3/Packages/User/Widget - Flat Chameleon.sublime-settings
+
 !.config/xfce4
 !.config/xfce4/desktop
 !.config/xfce4/desktop/icons.screen0-0x0.rc
@@ -65,20 +71,19 @@
 !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml
 !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
 !.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
-!.config/sublime-text-3
-!.config/sublime-text-3/Packages
-!.config/sublime-text-3/Packages/User
-!.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap
-!.config/sublime-text-3/Packages/User/Elixir.sublime-settings
-!.config/sublime-text-3/Packages/User/Elm.sublime-settings
-!.config/sublime-text-3/Packages/User/Flat Chameleon
-!.config/sublime-text-3/Packages/User/Flat Chameleon/Flat Chameleon.sublime-theme
-!.config/sublime-text-3/Packages/User/Package Control.sublime-settings
-!.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-!.config/sublime-text-3/Packages/User/Twilight.tmTheme
-!.config/sublime-text-3/Packages/User/Widget - Flat Chameleon.sublime-settings
+
+!.asoundrc
 !.dmrc
-!.gitignore
-!.spacemacs
-!.zimrc
-!.zshrc
+
+!.config/menus
+!.config/menus/applications-merged
+!.config/menus/applications-merged/user-chrome-apps.menu
+!.config/menus/applications-merged/xdg-desktop-menu-dummy.menu
+
+!.config/user-dirs.dirs
+!.config/user-dirs.locale
+!.config/mimeapps.list
+!.config/ristretto
+!.config/ristretto/accels.scm
+!.config/Thunar
+!.config/Thunar/uca.xml
