@@ -10,6 +10,7 @@
 !.local/bin/center
 !.local/bin/remove-opacity
 !.local/bin/wallpaper
+!.local/bin/switch_computer
 
 !.config
 !.config/compton.conf

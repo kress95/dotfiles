@@ -84,6 +84,7 @@ set $ws0 "19:0"
 # center mouse command
 set $center "$HOME/.local/bin/center"
 set $wallpaper "$HOME/.local/bin/wallpaper"
+set $switch_computer "$HOME/.local/bin/switch_computer"
 
 # apply wallpaper
 exec --no-startup-id $wallpaper
@@ -143,6 +144,12 @@ bindsym $mod+$shift+7 move container to workspace $ws7; exec --no-startup-id $ce
 bindsym $mod+$shift+8 move container to workspace $ws8; exec --no-startup-id $center
 bindsym $mod+$shift+9 move container to workspace $ws9; exec --no-startup-id $center
 bindsym $mod+$shift+0 move container to workspace $ws0; exec --no-startup-id $center
+
+#-------------------------------------------------------------------------------
+# Switch Computer
+#-------------------------------------------------------------------------------
+
+bindsym $mod+o --release exec --no-startup-id $switch_computer
 
 #-------------------------------------------------------------------------------
 # tiling

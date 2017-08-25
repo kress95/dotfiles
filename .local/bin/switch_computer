@@ -1,0 +1,9 @@
+#!/bin/env sh
+
+main=$(xrandr -q | grep -m 1 " connected" | cut -d" " -f1)
+
+if [ $main = "HDMI-1" ]; then
+    xdotool key ctrl+alt+j
+else
+    xdotool key ctrl+alt+u
+fi
