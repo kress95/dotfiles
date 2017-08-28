@@ -7,3 +7,4 @@ x-scheme-handler/http=exo-web-browser.desktop
 x-scheme-handler/https=exo-web-browser.desktop
 application/json=mousepad.desktop;
 application/x-yaml=mousepad.desktop;
+application/vnd.ms-publisher=mousepad.desktop;
