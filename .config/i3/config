@@ -85,9 +85,13 @@ set $ws0 "19:0"
 set $center "$HOME/.local/bin/center"
 set $wallpaper "$HOME/.local/bin/wallpaper"
 set $switch_computer "$HOME/.local/bin/switch_computer"
+set $lock_screen "$HOME/.local/bin/lock"
 
 # apply wallpaper
 exec --no-startup-id $wallpaper
+
+# lock the screen
+exec --no-startup-id $lock
 
 #-------------------------------------------------------------------------------
 # focus, movement and rezise
@@ -144,12 +148,6 @@ bindsym $mod+$shift+7 move container to workspace $ws7; exec --no-startup-id $ce
 bindsym $mod+$shift+8 move container to workspace $ws8; exec --no-startup-id $center
 bindsym $mod+$shift+9 move container to workspace $ws9; exec --no-startup-id $center
 bindsym $mod+$shift+0 move container to workspace $ws0; exec --no-startup-id $center
-
-#-------------------------------------------------------------------------------
-# Switch Computer
-#-------------------------------------------------------------------------------
-
-bindsym $mod+o --release exec --no-startup-id $switch_computer
 
 #-------------------------------------------------------------------------------
 # tiling
@@ -212,13 +210,7 @@ bindsym $mod+Pause exec --no-startup-id "~/.local/bin/iddle"
 #-------------------------------------------------------------------------------
 
 # lock screen
-bindsym $mod+q exec --no-startup-id i3lock \
-    -c 000000 \
-    --insidecolor=ffffff00 --ringcolor=ffffff3e \
-    --linecolor=ffffff00  --keyhlcolor=00000080 \
-    --ringvercolor=00000000 --separatorcolor=22222260 \
-    --insidevercolor=0000001c --ringwrongcolor=00000055 \
-    --insidewrongcolor=0000001c
+bindsym $mod+q exec --no-startup-id $lock
 
 # logout screen
 bindsym $mod+Shift+q exec --no-startup-id xfce4-session-logout
