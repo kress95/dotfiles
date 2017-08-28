@@ -91,7 +91,7 @@ set $lock_screen "$HOME/.local/bin/lock"
 exec --no-startup-id $wallpaper
 
 # lock the screen
-exec --no-startup-id $lock
+exec --no-startup-id $lock_screen
 
 #-------------------------------------------------------------------------------
 # focus, movement and rezise
