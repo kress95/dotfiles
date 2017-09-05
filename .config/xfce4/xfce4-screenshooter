@@ -1,8 +1,8 @@
 delay=1
 region=3
-action=2
+action=1
 show_mouse=1
-screenshot_dir=file:///home/cferraz/Pictures
+screenshot_dir=file:/home/kress/Pictures/Screenshots
 app=feh
 last_user=
 

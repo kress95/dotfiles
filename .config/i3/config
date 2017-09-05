@@ -110,16 +110,16 @@ bindsym $mod+$shift+p move right; exec --no-startup-id $center
 bindsym $mod+$shift+k move down; exec --no-startup-id $center
 
 # increase size
-bindsym $mod+$alt+i resize grow up 10 px or 5 ppt; exec --no-startup-id $center
-bindsym $mod+$alt+n resize grow left 10 px or 5 ppt; exec --no-startup-id $center
-bindsym $mod+$alt+p resize grow right 10 px or 5 ppt; exec --no-startup-id $center
-bindsym $mod+$alt+k resize grow down 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+j resize grow up 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+comma resize grow left 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+period resize grow right 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+m resize grow down 10 px or 5 ppt; exec --no-startup-id $center
 
 # decrease size
-bindsym $mod+$alt+$shift+i resize shrink down 10 px or 5 ppt; exec --no-startup-id $center
-bindsym $mod+$alt+$shift+n resize shrink right 10 px or 5 ppt; exec --no-startup-id $center
-bindsym $mod+$alt+$shift+p resize shrink left 10 px or 5 ppt; exec --no-startup-id $center
-bindsym $mod+$alt+$shift+k resize shrink up 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+$shift+j resize shrink down 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+$shift+less resize shrink right 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+$shift+greater resize shrink left 10 px or 5 ppt; exec --no-startup-id $center
+bindsym $mod+$shift+m resize shrink up 10 px or 5 ppt; exec --no-startup-id $center
 
 #-------------------------------------------------------------------------------
 # workspaces focus and movement
@@ -159,7 +159,7 @@ bindsym $mod+$shift+c focus parent; exec --no-startup-id $center
 
 # split V (|) H (-)
 bindsym $mod+bar split horizontal
-bindsym $mod+minus split vertical
+bindsym $mod+underscore split vertical
 
 # toggle split/tab
 bindsym $mod+s layout toggle split; exec --no-startup-id $center
@@ -210,7 +210,7 @@ bindsym $mod+Pause exec --no-startup-id "~/.local/bin/iddle"
 #-------------------------------------------------------------------------------
 
 # lock screen
-bindsym $mod+q exec --no-startup-id $lock
+bindsym $mod+q exec --no-startup-id $lock_screen
 
 # logout screen
 bindsym $mod+Shift+q exec --no-startup-id xfce4-session-logout
@@ -220,6 +220,6 @@ bindsym $mod+Shift+q exec --no-startup-id xfce4-session-logout
 #-------------------------------------------------------------------------------
 
 # opacity
-bindsym $mod+comma exec --no-startup-id transset-df -a --dec 0.05
-bindsym $mod+period exec --no-startup-id transset-df -a --inc 0.05
+bindsym $mod+minus exec --no-startup-id transset-df -a --dec 0.05
+bindsym $mod+plus exec --no-startup-id transset-df -a --inc 0.05
 bindsym $mod+BackSpace exec --no-startup-id "~/.local/bin/remove-opacity"

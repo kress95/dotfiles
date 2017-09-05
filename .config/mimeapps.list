@@ -8,3 +8,4 @@ x-scheme-handler/https=exo-web-browser.desktop
 application/json=mousepad.desktop;
 application/x-yaml=mousepad.desktop;
 application/vnd.ms-publisher=mousepad.desktop;
+image/x-xcf=gimp.desktop;
