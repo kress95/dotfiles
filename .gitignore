@@ -11,7 +11,7 @@
 !.local/bin/remove-opacity
 !.local/bin/wallpaper
 !.local/bin/switch_computer
-!.local/bin/lock_screen
+!.local/bin/lock
 
 !.config
 !.config/compton.conf
